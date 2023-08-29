@@ -1,0 +1,38 @@
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* padding: 20px; */ 
+background-color:whitesmoke;
+font-size: large;
+
+}
+
+#myform{
+ 
+}
+.container{
+    text-align: center;
+    height: 90vh;
+    width: 40vw;
+    border-radius: 10px;
+    background-color:#5CB3FF;
+
+}
+input[type=text] {
+    font-size: large;
+    width: 50%;
+    padding: 8px 10px;
+}
+.push-to-add{
+padding: 10px;
+
+}
+ 
+  #display_image{
+    width: 50px;
+    height:50px;
+    background-position:center;
+    border: ;
+  }

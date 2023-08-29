@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="image_input">Select image:</label>
+            
+        <input type="file"  id="image_input" value=""  accept="image/png, image/jpg">
+
+        <img id="img" src="" alt="images">
+
+        <div id="display_image"></div>
+
+        <form id ="myform" onsubmit="" >
+
+          
+           <br><br>
+
+
+            <label for="name">Name</label><br>
+            <input type="text" name=""><br>
+            <br>
+    
+            <label for="name">Position</label><br>
+            <input type="text" name=""   ><br>
+             
+            <br>
+            <label for="name">Address</label><br>
+            <input type="text" name=""  ><br>
+             <br>
+
+            <section class="repeating" id="repeating"> 
+                <label for="name">My Activities</label><br>
+                <input type="text" name=""   ><br>
+                 
+                <br>
+                <label for="name">Work History</label><br>
+                <input type="text" name=""  ><br><br>
+
+                <label for="name">Specialities</label><br>
+                <input type="text" name=""><br><br>
+
+            </section>
+           
+            <br><br>
+            <button type="submit" class="push-to-add" > Submit</button><br><br>
+
+        </form>
+        <button onclick="handleaddInput()" class="push-to-add" > Add input</button><br><br>
+    </div> 
+
+<script src="index.js"></script>
+</body>
+</html>
