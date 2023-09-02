@@ -18,29 +18,29 @@
 
         <img id="img" src="" alt="images">
 
-        <div id="display_image"></div>
+        <!-- <div id="display_image"></div> -->
 
 
-        <form id="myform" onsubmit="">
+        <form id="myform" onsubmit="takevalue()">
 
             <br><br>
 
-            <label for="name">Name</label><br>
-            <input type="text" name=""><br>
+            <label for="name" >Name</label><br>
+            <input type="text" id="hname" name=""><br>
             <br>
 
             <label for="name">Position</label><br>
-            <input type="text" name=""><br>
+            <input type="text" id="Position" name=""><br>
 
             <br>
             <label for="name">Address</label><br>
-            <input type="text" name=""><br>
+            <input type="text" id="Address" name=""><br>
             <br>
 
             
             <div id="repeat1">
                 <label for="name">My Activities</label><br>
-                <input type="text"  >
+                <input type="text" id="Activities" >
                 <button onclick="handleaddInput(event)" class="push-to-add"> Add More</button><br><br>
 
             </div>
@@ -63,7 +63,7 @@
             </div>
              
             <br>
-            <button type="submit" class="push-to-add"> Submit</button><br>
+            <button type="submit" class="push-to-add" value="Submit"> Submit</button><br>
 
         </form>
         <!-- <button onclick="handleaddInput()" class="push-to-add" > Add input</button><br><br> -->

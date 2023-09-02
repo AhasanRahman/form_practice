@@ -11,17 +11,24 @@ font-size: large;
 }
 
 #myform {
-  height: ;
+  /* height: ;
   width:;
   align-items:;
- 
+  */
+
+  /* text-align: center;
+  
+  width: 100%;
+  border-radius: 10px;
+  background-color: #15A3C7; */
+
 }
 .container{
     text-align: center;
-    height: 100%;
+    height: 100vh;
     width: 80vw;
     border-radius: 10px;
-    background-color:#5CB3FF;
+    background-color: #15A3C7;
 
 }
 input[type=text] {
@@ -43,16 +50,16 @@ padding: 5px;
   }
 
   #repeat1{
-    padding:;
-    height:;
-    width:;
-    align-items: ;
+    /* padding:;
+    height:150;
+    width:300px;
+   position: absolute; */
 
   }
 
-  #repeat1{
+  #repeat2{
     
   }
-  #repeat1{
+  #repeat3{
     
   }
