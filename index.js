@@ -10,18 +10,18 @@ image_input.addEventListener("change", () => {
 
 let repeat1 = document.getElementById("repeat1");
 let countId=0
-let field =0
 const handleaddInput = () => {
       //event.preventDefault();
     
       const newinput = ` 
 
-      <input type="text" name="" class="field" id="inputid${countId+=1}" placeholder="on budget" >
+      <input class="firstinputchild" type="text" name="" id="inputid${countId+=1}" placeholder="Repeat hire" >
       
-      <input type="text" name="" id="inputid${countId}" placeholder="on time ">
+      <input class="firstinputchild" type="text" name="" id="inputid${countId}" placeholder="job success ">
       <button id="btn${countId}" onclick="removeFunction(event,${countId})">remove</button>` 
 
     repeat1.innerHTML += (newinput);
+   
 
 }
 
@@ -31,6 +31,8 @@ const removeFunction=(event,id)=>{
     document.getElementById(`inputid${id}`).remove();
     document.getElementById(`btn${id}`).remove();
     document.getElementById(`inputid${id}`).remove();
+    
+    
 }
 
 let repeat2 = document.getElementById("repeat2");
@@ -39,9 +41,9 @@ const handleaddInput2 = (event) => {
     event.preventDefault();
     const newinput = ` 
 
-      <input type="text" name="" id="inputid${countId+=1}" placeholder="work time" >
+      <input class="firstinputchild"  type="text" name="" id="inputid${countId+=1}" placeholder="work time" >
       
-      <input type="text" name="" id="inputid${countId}" placeholder="work hours ">
+      <input class="firstinputchild"  type="text" name="" id="inputid${countId}" placeholder="work hours ">
       <button id="btn${countId}" onclick="removeFunction(event,${countId})">remove</button>` 
 
     repeat2.innerHTML += (newinput);
@@ -54,65 +56,77 @@ const handleaddInput3 = (event) => {
     event.preventDefault();
     const newinput = ` 
 
-      <input type="text" name="" id="inputid${countId+=1}" placeholder="new task ">
+      <input class="firstinputchild"   type="text" name="" id="inputid${countId+=1}" placeholder="new task ">
       <button id="btn${countId}" onclick="removeFunction(event,${countId})">remove</button>
 
-      <input type="text" name="" id="inputid${countId+=1}" placeholder="previous work ">
+      <input class="firstinputchild"  type="text" name="" id="inputid${countId+=1}" placeholder="previous work ">
       <button id="btn${countId}" onclick="removeFunction(event,${countId})">remove</button>
 
-      <input type="text" name="" id="inputid${countId+=1}" placeholder=" another ">
+      <input class="firstinputchild"  type="text" name="" id="inputid${countId+=1}" placeholder=" another ">
       <button id="btn${countId}" onclick="removeFunction(event,${countId})">remove</button>` 
 
     repeat3.innerHTML += (newinput);
 }
 
+function takevalue(e){
 
-function takevalue(){
-
-    
+    e.preventDefault();
     var name = document.getElementById("hname").value;
     var position = document.getElementById("Position").value;
     var Address = document.getElementById("Address").value;
-    var activities = document.getElementById("Activities").value;
-
-    //var newfield = document.getElementById("inputid").value;
-    //var newvalueadd = document.getElementsByClassName("push-to-add").value;
-
-     
-    document.write("His Name is : " + name+"<br>");
-    document.write("His Position  : " + position+"<br>");
-    document.write("His Address--- : " + Address+"<br>");
-    document.write("His activities : " + activities+"<br>");
-
-   // document.write("newfield : " +newfield );
-    //document.write("His activities : " + activities+"<br>");
-
-}
+    var activities1 = document.getElementById("Activities1").value;
+    var activities2 = document.getElementById("Activities2").value;
 
 
+    // const firstinputchild = document.getElementsByClassName("firstinputchild");
+    
+    // if(firstinputchild[0]){
+    //     for(let i=0;i<firstinputchild.length;i++){
+    //         console.log(firstinputchild[i].value);
+    //     }
+    // }
+
+    let showData=document.getElementById("showData");
+
+    const shownewvalue=`
+    <p>name:${name}</p>
+    <p>position: ${position}</p>
+    <p>Address: ${Address}</p>
+    <p>activities1:${activities1}</p>
+    <p>activities2:${activities2}</p>
+
+    `
+    
+    showData.innerHTML=shownewvalue;
 
 
 
-// const handleaddInput4 =(event ) => {
-//     event.preventDefault();
-//     const newinput =`<input type="text name=" id="input ` 
+    // document.write("His name :" +hname+"<br>");
+    // document.write("His Position  : " + position+"<br>");
+//     document.write("His Address--- : " + Address+"<br>");
+//     document.write("His activities : " + activities1+"<br>"); 
+//     document.write("His activities : " + activities2+"<br>");
+ }
+
+
+
+
+// function AddRow(e){
+
 // }
 
-// if(input_data.value){
-    //     const para =document.createElement("");
+/*
+    const newbody=`
+    <tr>
+                            <th>${name}</th>
+                            <th>${position}</th>
+                            <th>${Address}</th>
+                            <th>${activities}</th>
+                            <th>work history</th>
+                        </tr>`
     
-    //     para.innerHTML = `${input_data.value} <button>delete</button>`;
-    
-    //     const deleteBtn = para.getElementsByTagName("button");
-    
-    //     deleteBtn[0].addEventListener("click",() => {
-    //         para.remove();
-    //     })
-    
-    // element.appendChild(para)
-    // }
-    
-
+*/
+ 
 // const handleaddInput = () => {
 //     //  e.preventDefault();
     
@@ -124,4 +138,3 @@ function takevalue(){
 //     <input id="input${idcount=idcount+1}" type="text" name=""  >`
 
 //     repeating.innerHTML += (newinput);
-// }

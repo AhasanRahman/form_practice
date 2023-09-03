@@ -21,11 +21,11 @@
         <!-- <div id="display_image"></div> -->
 
 
-        <form id="myform" onsubmit="takevalue()">
+        <form id="myform" onsubmit="takevalue(event)">
 
             <br><br>
 
-            <label for="name" >Name</label><br>
+            <label for="name">Name</label><br>
             <input type="text" id="hname" name=""><br>
             <br>
 
@@ -37,37 +37,55 @@
             <input type="text" id="Address" name=""><br>
             <br>
 
-            
+
             <div id="repeat1">
                 <label for="name">My Activities</label><br>
-                <input type="text" id="Activities" >
+                <input type="text" name="" id="Activities1" placeholder="on budget">
+                <input type="text" name="" id="Activities2" placeholder="on time">
                 <button onclick="handleaddInput(event)" class="push-to-add"> Add More</button><br><br>
 
             </div>
             <br>
             <br>
-           
+
             <div id="repeat2">
                 <label for="name">Work History</label><br>
                 <input type="text" name="">
                 <button onclick="handleaddInput2(event)" class="push-to-add"> Add More</button><br>
             </div>
 
-        
+
             <br><br>
             <div id="repeat3">
                 <label for="name">Specialities</label><br>
-                <input type="text" name=""> 
+                <input type="text" name="">
                 <button onclick="handleaddInput3(event)" class="push-to-add"> Add More</button>
 
             </div>
-             
+
             <br>
-            <button type="submit" class="push-to-add" value="Submit"> Submit</button><br>
+            <button type="submit"> Submit</button><br>
 
         </form>
         <!-- <button onclick="handleaddInput()" class="push-to-add" > Add input</button><br><br> -->
+        <br><br>
+        <div id="showData">
+            <!-- <table id="show">
+                <Thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Address</th>
+                        <th>Activities</th>
+                        <th>work history</th>
+                    </tr>
+                </Thead>
+            </table> -->
+
+            
+        </div>
     </div>
+
 
     <script src="index.js"></script>
 </body>
